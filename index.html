@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lee Wen Bin (Adrian) | Cyber Security</title>
+  <meta name="description" content="Lee Wen Bin (Adrian Lee) — final-year BSc (Hons) Computer Science (Cyber Security) student at Asia Pacific University, Kuala Lumpur. Network intrusion detection, VAPT, IT support.">
+  <meta name="author" content="Lee Wen Bin">
+  <meta property="og:title" content="Lee Wen Bin (Adrian) | Cyber Security">
+  <meta property="og:description" content="Final-year Cyber Security student at APU. ML-based intrusion detection, penetration testing, IT support.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta name="theme-color" content="#0a0e14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0e14'/><text x='5' y='22' font-family='monospace' font-size='16' fill='%2339ff9f'>&gt;_</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand mono">&gt;_ adrian<span class="accent">@</span>lwb</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about"><span class="en">About</span><span class="zh">关于</span></a>
+        <a href="#experience"><span class="en">Experience</span><span class="zh">经历</span></a>
+        <a href="#projects"><span class="en">Projects</span><span class="zh">项目</span></a>
+        <a href="#skills"><span class="en">Skills</span><span class="zh">技能</span></a>
+        <a href="#education"><span class="en">Education</span><span class="zh">教育</span></a>
+        <a href="#contact"><span class="en">Contact</span><span class="zh">联系</span></a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn-ghost" id="langToggle" type="button" aria-label="Switch language">
+          <span class="en">中文</span><span class="zh">EN</span>
+        </button>
+        <button class="btn-ghost menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-grid">
+        <div>
+          <p class="mono prompt">$ whoami</p>
+          <h1>
+            <span class="en">Lee Wen Bin <span class="muted">(Adrian)</span></span>
+            <span class="zh">李温斌 <span class="muted">(Adrian)</span></span>
+          </h1>
+          <p class="mono role"><span id="typed"></span><span class="cursor">▍</span></p>
+          <p class="lead">
+            <span class="en">Final-year Cyber Security student at Asia Pacific University. I build machine-learning intrusion detection, test systems for weaknesses, and keep live operations running.</span>
+            <span class="zh">亚太科技大学网络安全专业毕业班学生。专注于基于机器学习的入侵检测、系统漏洞测试，以及保障实时运营的稳定运行。</span>
+          </p>
+          <ul class="meta">
+            <li><svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span class="en">Kuala Lumpur, Malaysia</span><span class="zh">马来西亚 吉隆坡</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm-2 8h14v10H5V10z"/></svg><span class="en">Age 22</span><span class="zh">22 岁</span></li>
+            <li><span class="dot"></span><span class="en">Open to graduate / junior roles</span><span class="zh">寻求应届 / 初级职位</span></li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="#contact"><span class="en">Get in touch</span><span class="zh">联系我</span></a>
+            <button class="btn btn-outline" type="button" id="printBtn"><span class="en">Download PDF</span><span class="zh">下载 PDF</span></button>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <img src="assets/profile.jpg" alt="Portrait of Lee Wen Bin" width="684" height="912">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="mono"><span class="hash">#</span> <span class="en">about</span><span class="zh">关于我</span></h2>
+      <div class="card about">
+        <p class="en">I'm in the final year of a BSc (Hons) in Computer Science (Cyber Security) at Asia Pacific University (APU), after completing a Diploma in Software Engineering there. My final year project is a network intrusion detection system that uses a Random Forest model to detect DoS/DDoS, port scans and brute-force attacks with 99.86% accuracy, and explains each alert with SHAP.</p>
+        <p class="en">My coursework covers vulnerability assessment and penetration testing, wireless and cloud security, and secure software. I've also done hands-on IT support at three companies, most recently keeping live esports broadcasts and their networks running at CRIT Malaysia. I'm looking for a role in security operations, penetration testing or security engineering.</p>
+        <p class="zh">我目前就读于亚太科技大学（APU）计算机科学（网络安全）荣誉学士学位毕业班，此前已在该校完成软件工程专科课程。我的毕业设计是一套网络入侵检测系统，使用随机森林模型检测 DoS/DDoS、端口扫描和暴力破解攻击，准确率达 99.86%，并通过 SHAP 解释每一条告警。</p>
+        <p class="zh">我的课程涵盖漏洞评估与渗透测试、无线与云安全以及安全软件开发。我曾在三家公司从事 IT 支持工作，最近一次是在 CRIT Malaysia 保障电竞直播及其网络的稳定运行。我希望在安全运营、渗透测试或安全工程领域发展。</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>99.86%</b><span class="en">IDS accuracy (FYP)</span><span class="zh">入侵检测准确率</span></div>
+        <div class="stat"><b>3</b><span class="en">IT roles</span><span class="zh">IT 职位</span></div>
+        <div class="stat"><b>3.43</b><span class="en">Diploma CGPA</span><span class="zh">专科 CGPA</span></div>
+        <div class="stat"><b>3</b><span class="en">Languages</span><span class="zh">语言</span></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="mono"><span class="hash">#</span> <span class="en">experience</span><span class="zh">工作经历</span></h2>
+      <ol class="timeline">
+        <li class="card">
+          <div class="tl-head">
+            <div>
+              <h3><span class="en">IT Support Intern (Cyber Security) — Broadcasting</span><span class="zh">IT 支持实习生（网络安全）— 直播部门</span></h3>
+              <p class="org">CRIT Esports Malaysia · <span class="en">Sungai Besi, KL</span><span class="zh">吉隆坡 Sungai Besi</span></p>
+            </div>
+            <span class="date mono">Sep 2025 – Jan 2026</span>
+          </div>
+          <ul class="en">
+            <li>Set up and ran the technical side of live esports broadcasts: cameras, audio, lighting, streaming software, overlays and graphics.</li>
+            <li>Monitored live streams for quality and stability, and fixed connectivity and equipment problems in real time.</li>
+            <li>Kept the network secure during online and on-site events.</li>
+            <li>Recorded, clipped and edited content, maintained broadcast equipment, and helped write SOPs for technical operations.</li>
+          </ul>
+          <ul class="zh">
+            <li>负责电竞直播的技术筹备与执行，包括摄像机、音频、灯光、推流软件、画面叠加与图形。</li>
+            <li>实时监控直播画质与稳定性，及时排除网络连接与设备故障。</li>
+            <li>在线上及线下活动期间维护网络安全。</li>
+            <li>录制、剪辑与后期制作内容，维护直播设备，并协助编写技术操作 SOP。</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="tl-head">
+            <div>
+              <h3><span class="en">IT Support Intern</span><span class="zh">IT 支持实习生</span></h3>
+              <p class="org">AI Tech</p>
+            </div>
+            <span class="date mono">Jul 2024 – Oct 2024</span>
+          </div>
+          <ul class="en">
+            <li>Gave on-site and remote support for desktop and laptop hardware and software issues.</li>
+            <li>Did device maintenance, including thermal paste replacement and component upgrades.</li>
+            <li>Set up and configured new computers and peripherals.</li>
+            <li>Documented support cases and kept records of resolved issues.</li>
+          </ul>
+          <ul class="zh">
+            <li>为台式机与笔记本提供现场及远程软硬件技术支持。</li>
+            <li>执行设备保养，包括更换导热硅脂与升级硬件组件。</li>
+            <li>安装与配置新电脑及外设。</li>
+            <li>记录支持工单并维护已解决问题的档案。</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="tl-head">
+            <div>
+              <h3><span class="en">IT Support (Part-time)</span><span class="zh">IT 支持（兼职）</span></h3>
+              <p class="org">Pets Family · <span class="en">Petaling Jaya</span><span class="zh">八打灵再也</span></p>
+            </div>
+            <span class="date mono">2021 – 2023</span>
+          </div>
+          <ul class="en">
+            <li>Diagnosed and fixed hardware and software issues on desktops and laptops.</li>
+            <li>Improved the network setup for better connectivity and performance.</li>
+            <li>Managed the IT equipment inventory and scheduled maintenance.</li>
+          </ul>
+          <ul class="zh">
+            <li>诊断并修复台式机与笔记本的软硬件问题。</li>
+            <li>优化网络架构，提升连接稳定性与性能。</li>
+            <li>管理 IT 设备库存并安排定期维护。</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="mono"><span class="hash">#</span> <span class="en">projects</span><span class="zh">项目经历</span></h2>
+
+      <article class="card featured">
+        <div class="badge mono"><span class="en">Final Year Project</span><span class="zh">毕业设计</span></div>
+        <div class="tl-head">
+          <h3><span class="en">Network-Based Intelligent Intrusion Detection System</span><span class="zh">基于网络的智能入侵检测系统</span></h3>
+          <span class="date mono">2025 – 2026</span>
+        </div>
+        <p class="en">An ML intrusion detection system trained on the CICIDS2017 dataset. It sorts network flows into benign, DoS/DDoS, port scan and brute force, and explains why each flow was flagged.</p>
+        <p class="zh">基于 CICIDS2017 数据集训练的机器学习入侵检测系统，可将网络流量分类为正常、DoS/DDoS、端口扫描与暴力破解，并解释每条流量被标记的原因。</p>
+        <div class="metrics">
+          <div><b>99.86%</b><span class="en">Accuracy</span><span class="zh">准确率</span></div>
+          <div><b>0.995</b><span class="en">Macro F1</span><span class="zh">宏平均 F1</span></div>
+          <div><b>0.9998</b><span>ROC-AUC</span></div>
+          <div><b>4</b><span class="en">Models compared</span><span class="zh">对比模型</span></div>
+        </div>
+        <ul class="en">
+          <li>Built a leak-free pipeline: feature selection fitted on the training split only, and SMOTE applied inside stratified k-fold CV.</li>
+          <li>Compared four ways of handling class imbalance (class weights, SMOTE, SMOTE+Tomek, undersampling) and picked the best by macro-F1.</li>
+          <li>Added SHAP explanations for each alert, and mapped the top features to known indicators of compromise.</li>
+          <li>Tuned the detection threshold and tracked false-positive rate per class, then benchmarked against Decision Tree, Naive Bayes and Logistic Regression.</li>
+        </ul>
+        <ul class="zh">
+          <li>构建无数据泄漏的流程：特征选择仅基于训练集，SMOTE 在分层 K 折交叉验证内部执行。</li>
+          <li>对比四种类别不平衡处理方法（类别权重、SMOTE、SMOTE+Tomek、欠采样），以宏平均 F1 选出最优方案。</li>
+          <li>通过 SHAP 为每条告警提供解释，并将关键特征映射到已知入侵指标（IoC）。</li>
+          <li>调整检测阈值、追踪各类别误报率，并与决策树、朴素贝叶斯及逻辑回归模型进行基准对比。</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>scikit-learn</span><span>imbalanced-learn</span><span>SHAP</span><span>pandas</span><span>Random Forest</span><span>CICIDS2017</span></div>
+      </article>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="tl-head"><h3><span class="en">Hotel Management System</span><span class="zh">酒店管理系统</span></h3><span class="date mono">2022</span></div>
+          <p class="en">A Python desktop app for reservations, check-in/check-out, room management and billing, backed by a MySQL database.</p>
+          <p class="zh">基于 Python 的桌面应用，涵盖预订、入住/退房、客房管理与账单，后端使用 MySQL 数据库。</p>
+          <div class="tags"><span>Python</span><span>Tkinter</span><span>MySQL</span><span>OOP</span></div>
+        </article>
+        <article class="card">
+          <div class="tl-head"><h3><span class="en">Academic Record System</span><span class="zh">学术记录系统</span></h3><span class="date mono">2023</span></div>
+          <p class="en">A relational database and web interface for student, course and grade records, with secure login, full CRUD and performance reports.</p>
+          <p class="zh">管理学生、课程与成绩的关系型数据库及网页界面，具备安全登录、完整增删改查及成绩分析报告。</p>
+          <div class="tags"><span>MySQL</span><span>PHP</span><span>Python</span><span>HTML/CSS</span></div>
+        </article>
+        <article class="card">
+          <div class="tl-head"><h3><span class="en">Learning Website</span><span class="zh">在线学习网站</span></h3><span class="date mono">2023</span></div>
+          <p class="en">A responsive learning site with interactive modules, quizzes, user login, progress tracking and a discussion forum.</p>
+          <p class="zh">响应式学习网站，包含互动学习模块、测验、用户登录、学习进度追踪及讨论区。</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></div>
+        </article>
+        <article class="card">
+          <div class="tl-head"><h3><span class="en">Colour Blindness Test App</span><span class="zh">色盲测试应用</span></h3><span class="date mono">2023</span></div>
+          <p class="en">A JavaFX app that runs Ishihara-plate and other colour vision tests, analyses the results and stores them in MySQL.</p>
+          <p class="zh">基于 JavaFX 的应用，提供石原氏色板等色觉测试，分析结果并存储于 MySQL。</p>
+          <div class="tags"><span>Java</span><span>JavaFX</span><span>MySQL</span><span>MVC</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="mono"><span class="hash">#</span> <span class="en">skills</span><span class="zh">专业技能</span></h2>
+      <div class="grid-3">
+        <div class="card skill">
+          <h3><span class="en">Cyber Security</span><span class="zh">网络安全</span></h3>
+          <div class="tags"><span>Penetration Testing</span><span>VAPT</span><span>Intrusion Detection</span><span>Network Traffic Analysis</span><span>Wireshark</span><span>Wireless Security</span><span>Cryptography</span><span>CTF</span></div>
+        </div>
+        <div class="card skill">
+          <h3><span class="en">Machine Learning &amp; Data</span><span class="zh">机器学习与数据</span></h3>
+          <div class="tags"><span>scikit-learn</span><span>pandas</span><span>SHAP</span><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span></div>
+        </div>
+        <div class="card skill">
+          <h3><span class="en">Programming</span><span class="zh">编程语言</span></h3>
+          <div class="tags"><span>Python</span><span>Java</span><span>C++</span><span>JavaScript</span><span>PHP</span></div>
+        </div>
+        <div class="card skill">
+          <h3><span class="en">Web</span><span class="zh">网页开发</span></h3>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>Tailwind</span><span>React</span><span>Bootstrap</span></div>
+        </div>
+        <div class="card skill">
+          <h3><span class="en">IT &amp; Infrastructure</span><span class="zh">IT 与基础设施</span></h3>
+          <div class="tags"><span>CCNA Networking</span><span>Hardware Troubleshooting</span><span>Cloud</span><span>Live Broadcast Ops</span></div>
+        </div>
+        <div class="card skill">
+          <h3><span class="en">Media</span><span class="zh">多媒体</span></h3>
+          <div class="tags"><span>Premiere Pro</span><span>Final Cut Pro</span><span>After Effects</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2 class="mono"><span class="hash">#</span> <span class="en">education</span><span class="zh">教育背景</span></h2>
+      <ol class="timeline">
+        <li class="card">
+          <div class="tl-head">
+            <div>
+              <h3><span class="en">BSc (Hons) Computer Science (Cyber Security)</span><span class="zh">计算机科学（网络安全）荣誉学士</span></h3>
+              <p class="org">Asia Pacific University of Technology &amp; Innovation (APU)</p>
+            </div>
+            <span class="date mono"><span class="en">Nov 2024 – Present</span><span class="zh">2024年11月 – 至今</span></span>
+          </div>
+          <p class="en"><b>Relevant modules:</b> Vulnerability Assessment &amp; Penetration Testing, Advanced Cyber Security, Advanced Software Security, Wireless Security, Cloud Security, Implementation of Secure Systems, Cryptography, Network Attack &amp; Defence, Information Security Management.</p>
+          <p class="zh"><b>相关课程：</b>漏洞评估与渗透测试、高级网络安全、高级软件安全、无线安全、云安全、安全系统实施、密码学、网络攻防、信息安全管理。</p>
+        </li>
+        <li class="card">
+          <div class="tl-head">
+            <div>
+              <h3><span class="en">Diploma in ICT (Software Engineering)</span><span class="zh">信息与通信技术专科（软件工程）</span></h3>
+              <p class="org">Asia Pacific University of Technology &amp; Innovation (APU)</p>
+            </div>
+            <span class="date mono">Sep 2022 – Jun 2024</span>
+          </div>
+          <p class="en"><b>CGPA 3.43</b> · Data Structures, Algorithm Analysis, Object-Oriented Programming, Database Systems.</p>
+          <p class="zh"><b>CGPA 3.43</b> · 数据结构、算法分析、面向对象编程、数据库系统。</p>
+        </li>
+        <li class="card">
+          <div class="tl-head">
+            <div>
+              <h3><span class="en">Sijil Pelajaran Malaysia (SPM)</span><span class="zh">马来西亚教育文凭（SPM）</span></h3>
+              <p class="org">SMK Taman Connaught</p>
+            </div>
+            <span class="date mono">2017 – 2021</span>
+          </div>
+          <p class="en">2 A's · Mathematics, English.</p>
+          <p class="zh">2 个 A · 数学、英语。</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CERTS + LANGUAGES -->
+    <section class="section grid-2" id="certs">
+      <div>
+        <h2 class="mono"><span class="hash">#</span> <span class="en">certifications</span><span class="zh">证书与活动</span></h2>
+        <ul class="card list">
+          <li><b>CCNA — Networking</b><span>Cisco · May 2023</span></li>
+          <li><b><span class="en">Python Programming</span><span class="zh">Python 编程</span></b><span>Asia Pacific University · Dec 2022</span></li>
+          <li><b><span class="en">Enterprise Speaker Series: Startup vs MNC</span><span class="zh">企业讲座系列：初创公司 vs 跨国企业</span></b><span>enterprise@APU · Jan 2026</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="mono"><span class="hash">#</span> <span class="en">languages</span><span class="zh">语言能力</span></h2>
+        <ul class="card list lang">
+          <li><b><span class="en">Chinese (Mandarin)</span><span class="zh">中文</span></b><span class="bar"><i style="width:100%"></i></span><span class="en">Native</span><span class="zh">母语</span></li>
+          <li><b><span class="en">English</span><span class="zh">英语</span></b><span class="bar"><i style="width:85%"></i></span><span class="en">Professional</span><span class="zh">熟练</span></li>
+          <li><b><span class="en">Malay</span><span class="zh">马来语</span></b><span class="bar"><i style="width:65%"></i></span><span class="en">Conversational</span><span class="zh">日常交流</span></li>
+        </ul>
+        <h2 class="mono small-gap"><span class="hash">#</span> <span class="en">interests</span><span class="zh">兴趣爱好</span></h2>
+        <div class="tags">
+          <span class="en">CTF</span><span class="zh">CTF 竞赛</span>
+          <span class="en">Web Development</span><span class="zh">网页开发</span>
+          <span class="en">Video Editing</span><span class="zh">视频剪辑</span>
+          <span class="en">Reading</span><span class="zh">阅读</span>
+          <span class="en">Fitness</span><span class="zh">健身</span>
+          <span class="en">Basketball</span><span class="zh">篮球</span>
+          <span class="en">Swimming</span><span class="zh">游泳</span>
+          <span class="en">Badminton</span><span class="zh">羽毛球</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="mono"><span class="hash">#</span> <span class="en">contact</span><span class="zh">联系方式</span></h2>
+      <div class="card contact">
+        <p class="mono prompt">$ ./reach_out.sh</p>
+        <p class="en">I'm open to graduate and junior roles in cyber security and IT. The fastest way to reach me is email or WhatsApp.</p>
+        <p class="zh">正在寻求网络安全与 IT 领域的应届或初级职位，欢迎通过邮件或 WhatsApp 联系我。</p>
+        <div class="contact-grid">
+          <a href="mailto:adrianlwb@gmail.com">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span><small><span class="en">Email</span><span class="zh">邮箱</span></small>adrianlwb@gmail.com</span>
+          </a>
+          <a href="https://wa.me/60182904479" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+            <span><small>Phone / WhatsApp</small>+60 18-290 4479</span>
+          </a>
+          <a href="https://www.linkedin.com/in/adrian-lwb" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18H5.7V9.8h2.6V18zM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM18.3 18h-2.6v-4c0-1 0-2.2-1.4-2.2s-1.6 1-1.6 2.1V18H10V9.8h2.5v1.1c.4-.7 1.2-1.4 2.5-1.4 2.7 0 3.2 1.8 3.2 4V18z"/></svg>
+            <span><small>LinkedIn</small>linkedin.com/in/adrian-lwb</span>
+          </a>
+          <a href="https://github.com/AdrianLee04" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            <span><small>GitHub</small>github.com/AdrianLee04</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <p>© <span id="year"></span> Lee Wen Bin · <span class="en">Last updated Oct 2026</span><span class="zh">最后更新：2026年10月</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
