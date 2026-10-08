@@ -50,6 +50,7 @@ html[data-lang="zh"] .en { display: none !important; }
 html[data-lang="zh"] body { font-family: "Noto Sans SC", var(--sans); }
 
 .skip { position: absolute; left: -999px; }
+.print-only { display: none; }
 .skip:focus { left: 16px; top: 16px; z-index: 100; background: var(--accent); color: #000; padding: 8px 12px; border-radius: 8px; }
 
 /* NAV */
@@ -236,14 +237,30 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 
 /* PRINT → clean light PDF resume */
 @media print {
-  :root { --bg: #fff; --bg-2: #fff; --card: #fff; --border: #ddd; --text: #111; --muted: #555; --accent: #0a7d4f; --accent-2: #0b5c7a; }
-  body { background: #fff; font-size: 11pt; }
+  :root { --bg: #fff; --bg-2: #fff; --card: #fff; --border: #ddd; --text: #111; --muted: #555; --accent: #4f46e5; --accent-2: #0f766e; --violet: #4f46e5; }
+  body { background: #fff; font-size: 10pt; line-height: 1.5; }
+  .contact .prompt { display: none; }
+  .card ul li { margin-bottom: 2px; }
+  .timeline { gap: 4px; }
   body::before, .nav, .cta, .stats, .skip, .cursor, .toast { display: none !important; }
   .hero { padding: 0 0 8px; }
-  .hero-grid { grid-template-columns: 1fr 110px; gap: 20px; }
-  .photo-wrap { box-shadow: none; }
+  @page { size: A4; margin: 14mm 14mm; }
+  main { padding: 0; max-width: none; }
+  .hero-grid { grid-template-columns: 1fr 110px !important; gap: 20px; }
+  .photo-wrap { box-shadow: none; width: 110px !important; order: 0 !important; }
+  .hero h1 { background: none; color: #111; -webkit-text-fill-color: #111; font-size: 24pt; }
+  .hero h1 .muted { -webkit-text-fill-color: #555; }
+  .role { min-height: 0; margin: 6px 0 10px; }
+  #typed { display: none; }
+  .print-only { display: inline !important; }
+  .meta { margin-bottom: 0; }
+  .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .grid-2, .section.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  h2 { margin-bottom: 8px; break-after: avoid; }
+  .featured { border: none; }
+  .metrics { grid-template-columns: repeat(4, 1fr) !important; }
   .section { padding: 14px 0 0; }
-  .card { padding: 10px 0; border: none; background: none; break-inside: avoid; }
+  .card { padding: 6px 0; border: none; background: none; break-inside: avoid; }
   .timeline::before, .timeline > li::before { display: none; }
   .timeline { padding-left: 0; }
   .reveal { opacity: 1 !important; transform: none !important; }

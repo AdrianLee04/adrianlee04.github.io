@@ -76,9 +76,6 @@
     items.forEach((el) => { el.classList.add("reveal"); io.observe(el); });
   }
 
-  // PDF download = print stylesheet
-  document.getElementById("printBtn").addEventListener("click", () => window.print());
-
   // Email: mailto does nothing without a desktop mail app, so also copy + offer Gmail
   const email = "adrianlwb@gmail.com";
   const toast = document.createElement("div");
