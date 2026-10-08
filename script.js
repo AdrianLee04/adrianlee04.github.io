@@ -79,5 +79,27 @@
   // PDF download = print stylesheet
   document.getElementById("printBtn").addEventListener("click", () => window.print());
 
+  // Email: mailto does nothing without a desktop mail app, so also copy + offer Gmail
+  const email = "adrianlwb@gmail.com";
+  const toast = document.createElement("div");
+  toast.className = "toast";
+  toast.setAttribute("role", "status");
+  document.body.appendChild(toast);
+  let toastTimer;
+  document.getElementById("emailLink").addEventListener("click", () => {
+    const zh = root.dataset.lang === "zh";
+    const gmail = "https://mail.google.com/mail/?view=cm&fs=1&to=" + email;
+    const copied = navigator.clipboard ? navigator.clipboard.writeText(email) : Promise.reject();
+    const show = (ok) => {
+      toast.innerHTML =
+        (ok ? (zh ? "已复制邮箱：" : "Copied ") : "") + "<b>" + email + "</b>" +
+        ' · <a href="' + gmail + '" target="_blank" rel="noopener">' + (zh ? "用 Gmail 发送" : "Open in Gmail") + "</a>";
+      toast.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove("show"), 6000);
+    };
+    copied.then(() => show(true), () => show(false));
+  });
+
   document.getElementById("year").textContent = new Date().getFullYear();
 })();
